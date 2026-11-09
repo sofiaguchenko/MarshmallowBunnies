@@ -15,7 +15,7 @@ def show_book_cover(image_path, width=None):
     path = BASE_DIR / str(image_path)
 
     if path.is_file():
-        st.image(str(path), width=width)
+        st.image(str(path), width=width if width is not None else "stretch")
     else:
         st.caption("Cover image not available")
 
