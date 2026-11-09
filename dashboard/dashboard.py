@@ -124,7 +124,7 @@ for start in range(0, len(examples), 3):
     ):
         with col:
             st.image(
-                book["image_path"],
+                str(BASE_DIR / book["image_path"]),
                 use_container_width=True
             )
             st.caption(f"Title: {book['Title']}")
@@ -186,7 +186,7 @@ for _, book in comparison_df.head(num_comparisons).iterrows():
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        st.image(book["image_path"], width=180)
+        st.image(str(BASE_DIR / book["image_path"]), width=180)
 
     with col2:
         st.write(f"**{book['Title']}**")
@@ -256,7 +256,7 @@ for _, book in high_conf_errors.head(10).iterrows():
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        st.image(book["image_path"], width=160)
+        st.image(str(BASE_DIR / book["image_path"]), width=160)
 
     with col2:
         st.write(f"**{book['Title']}**")
