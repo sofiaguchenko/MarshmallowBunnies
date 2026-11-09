@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 st.set_page_config(
     page_title="CLIP Book Genre Explorer",
@@ -8,9 +9,11 @@ st.set_page_config(
     layout="wide"
 )
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 @st.cache_data
 def load_data():
-    return pd.read_csv("clip_predictions.csv")
+    return pd.read_csv(BASE_DIR / "data" / "clip_predictions.csv")
 
 df = load_data()
 
