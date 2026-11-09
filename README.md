@@ -26,7 +26,8 @@ Rather than focusing only on classification accuracy, we use visualizations to e
 
 | | Details |
 |---|---|
-| **Model** | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) (`openai/clip-vit-base-patch32`) || **Task** | Zero-shot image classification |
+| **Model** | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) (`openai/clip-vit-base-patch32`) |
+| **Task** | Zero-shot image classification |
 | **Dataset** | BookCover30 |
 | **Subset** | 3,000 book covers across 6 genres |
 
@@ -51,24 +52,44 @@ We treat CLIP as a black-box model and investigate its predictions through:
 
 Our goal is to understand model behavior beyond aggregate performance metrics.
 
+## Key Findings
+
+Using neutral prompts, CLIP achieved **62.3% accuracy**. Changing to descriptive prompts reduced accuracy to **52.3%** and changed approximately **40% of predictions**.
+
+We also observed associations between visual features and classification errors, as well as incorrect predictions with high confidence.
+
+For the complete analysis, figures, and conclusions, see the research report.
+
 ## Repository Structure
 
 ```text
 MarshmallowBunnies/
-├── README.md
-├── team-info.json
-├── workload.json
-├── requirements.txt
-├── ai_reflection_midpoint.md
 ├── ai-interactions/
 │   └── phase1-ai-interactions.md
+├── dashboard/
+│   └── dashboard.py
 ├── data/
 │   └── clip_predictions.csv
 ├── notebooks/
 │   └── phase1-ai-aided-pair.ipynb
-└── dashboard/
-    └── dashboard.py
+├── reports/
+│   ├── Report_phase1-ai-aided-pair.md
+│   └── output_*.png
+├── .gitignore
+├── README.md
+├── ai_reflection_midpoint.md
+├── requirements.txt
+├── team-info.json
+└── workload.json
 ```
+
+## Research Materials
+
+- [Research Report](reports/Report_phase1-ai-aided-pair.md) — findings, visualizations, and conclusions.
+- [Jupyter Notebook](notebooks/phase1-ai-aided-pair.ipynb) — experimental code and methodology.
+- [Interactive Dashboard](dashboard/dashboard.py) — exploration of model predictions and errors.
+- [AI Interaction Log](ai-interactions/phase1-ai-interactions.md) — important interactions with GenAI during the research process.
+- [GenAI Reflection](ai_reflection_midpoint.md) — reflection on the benefits, limitations, and challenges of AI assistance.
 
 ## Installation & Usage
 
