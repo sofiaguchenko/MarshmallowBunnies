@@ -11,6 +11,14 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+def show_book_cover(image_path, width=None):
+    path = BASE_DIR / str(image_path)
+
+    if path.is_file():
+        st.image(str(path), width=width)
+    else:
+        st.caption("Cover image not available")
+
 @st.cache_data
 def load_data():
     return pd.read_csv(BASE_DIR / "data" / "clip_predictions.csv")
@@ -123,10 +131,7 @@ for start in range(0, len(examples), 3):
         cols, examples.iloc[start:start + 3].iterrows()
     ):
         with col:
-            st.image(
-                str(BASE_DIR / book["image_path"]),
-                use_container_width=True
-            )
+            show_book_cover(book["image_path"])
             st.caption(f"Title: {book['Title']}")
             st.caption(f"True: {book['Category']}")
             st.caption(f"Predicted: {book[prediction_col]}")
@@ -186,7 +191,7 @@ for _, book in comparison_df.head(num_comparisons).iterrows():
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        st.image(str(BASE_DIR / book["image_path"]), width=180)
+        show_book_cover(book["image_path"], width=180)
 
     with col2:
         st.write(f"**{book['Title']}**")
@@ -256,7 +261,7 @@ for _, book in high_conf_errors.head(10).iterrows():
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        st.image(str(BASE_DIR / book["image_path"]), width=160)
+        show_book_cover(book["image_path"], width=160)
 
     with col2:
         st.write(f"**{book['Title']}**")
