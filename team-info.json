@@ -4,17 +4,17 @@
   "students": [
     {
       "student_id": "k12148163",
-      "first_name": "",
-      "last_name": "",
+      "first_name": "Daryna",
+      "last_name": "Vorona",
       "email": "k12148163@students.jku.at",
-      "github_user": ""
+      "github_user": "darinochka-kvitochka"
     },
     {
       "student_id": "k12148132",
-      "first_name": "",
-      "last_name": "",
+      "first_name": "Vladyslav",
+      "last_name": "Kravchenko",
       "email": "k12148132@students.jku.at",
-      "github_user": ""
+      "github_user": "vladkrv"
     },
     {
       "student_id": "k12148479",
@@ -28,7 +28,7 @@
       "first_name": "Milana",
       "last_name": "Koval",
       "email": "k12148486@students.jku.at",
-      "github_user": ""
+      "github_user": "milanakov"
     }
   ]
 }
