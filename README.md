@@ -17,8 +17,8 @@ Rather than focusing only on classification accuracy, we use visualizations to e
 
 | Student | Student ID |
 |---|---|
-| Student 1 | k12148163 |
-| Student 2 | k12148132 |
+| Darina Vorona | k12148163 |
+| Vladyslav Kravchenko | k12148132 |
 | Sofiia Guchenko | k12148479 |
 | Milana Koval | k12148486 |
 
@@ -26,8 +26,7 @@ Rather than focusing only on classification accuracy, we use visualizations to e
 
 | | Details |
 |---|---|
-| **Model** | `openai/clip-vit-base-patch32` |
-| **Task** | Zero-shot image classification |
+| **Model** | [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32) (`openai/clip-vit-base-patch32`) || **Task** | Zero-shot image classification |
 | **Dataset** | BookCover30 |
 | **Subset** | 3,000 book covers across 6 genres |
 
@@ -62,6 +61,7 @@ MarshmallowBunnies/
 ├── requirements.txt
 ├── ai_reflection_midpoint.md
 ├── ai-interactions/
+│   └── phase1-ai-interactions.md
 ├── data/
 │   └── clip_predictions.csv
 ├── notebooks/
