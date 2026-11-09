@@ -1,11 +1,26 @@
+
 {
-    "team_name": "Team Name",
-    "students": [
-        {
-            "first_name": "First",
-            "last_name": "Last",
-            "workload": 0.25
-        },
-        // ...add a record for each student
-    ]
-} 
+  "team_name": "Marshmallow Bunnies",
+  "students": [
+    {
+      "first_name": "Vladyslav",
+      "last_name": "Kravchenko",
+      "workload": 0.25
+    },
+    {
+      "first_name": "Daryna",
+      "last_name": "Vorona",
+      "workload": 0.25
+    },
+    {
+      "first_name": "Sofiia",
+      "last_name": "Guchenko",
+      "workload": 0.25
+    },
+    {
+      "first_name": "Milana",
+      "last_name": "Koval",
+      "workload": 0.25
+    }
+  ]
+}
