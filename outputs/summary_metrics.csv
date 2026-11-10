@@ -1,0 +1,4 @@
+metric,value
+overall_accuracy_neutral,0.32473684210526316
+overall_accuracy_descriptive,0.33421052631578946
+prediction_changes_between_prompts,2613.0
