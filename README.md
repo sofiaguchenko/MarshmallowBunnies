@@ -80,7 +80,7 @@ The confusion patterns remain consistent with the broader project goal: visually
 - [notebooks/phase1-ai-aided-pair.ipynb](notebooks/phase1-ai-aided-pair.ipynb) — earlier AI-assisted analysis
 - [notebooks/phase1-human-only.ipynb](notebooks/phase1-human-only.ipynb) — local CLIP evaluation and prompt comparison
 - [reports/Report_phase1-ai-aided-pair.md](reports/Report_phase1-ai-aided-pair.md) — original report for the AI-assisted run
-- [reports/phase1-ai-vs-human-comparison.md](reports/phase1-ai-vs-human-comparison.md) — comparison between the two analyses
+- [notebooks/phase1-progress-report.ipynb](notebooks/phase1-progress-report.ipynb) — **Start Here:** The unified Phase I progress update combining AI and human-only insights.
 
 ## Repository Structure
 
