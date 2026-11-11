@@ -98,6 +98,7 @@ MarshmallowBunnies/
 ├── outputs/
 ├── reports/
 │   ├── Report_phase1-ai-aided-pair.md
+│   ├── phase1-ai-vs-human-comparison.md
 │   └── output_*.png
 ├── .gitignore
 ├── README.md
