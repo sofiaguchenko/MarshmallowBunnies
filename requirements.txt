@@ -10,3 +10,6 @@ Pillow
 opencv-python
 tqdm
 jupyter
+easyocr
+numpy<2
+opencv-python-headless==4.11.0.86

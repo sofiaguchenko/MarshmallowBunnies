@@ -221,3 +221,12 @@ __marimo__/
 
 # dataset folder
 archive/
+
+# Phase 2 heavy intermediate artifacts
+phase2-ai-assisted/outputs/masked_covers/
+phase2-ai-assisted/outputs/visual_features.csv
+.DS_Store
+
+phase2-ai-assisted/outputs/masked_covers/
+phase2-ai-assisted/outputs/visual_features.csv
+.DS_Store
